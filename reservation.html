@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réservation – Ton Évasion Privée</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 style="color:violet;">Réservation</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="reservation.html">Réserver</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Formulaire de Réservation</h2>
+    <form action="https://formspree.io/f/xnndrewd" method="POST">
+      <label>Nom:</label><input type="text" name="nom" required />
+      <label>Email:</label><input type="email" name="email" required />
+      <label>Date:</label><input type="date" name="date" required />
+      <label>Heure:</label><input type="time" name="heure" required />
+      <label>Durée:</label>
+      <select name="duree" required>
+        <option>1h</option>
+        <option>2h</option>
+        <option>4h</option>
+        <option>Nuit</option>
+      </select>
+      <button type="submit" class="btn">Réserver</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Ton Évasion Privée</p>
+  </footer>
+</body>
+</html>
